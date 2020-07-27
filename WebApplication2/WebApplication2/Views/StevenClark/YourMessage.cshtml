@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Your Message Pages";
+}
+
+<h1>Welcome to Your Message Page.</h1>
+<br />
+
+<form asp-controller="StevenClark" asp-action="PrintMessage">
+    Leave Your Messages :  <input name="Text1" type="text" />
+    <input id="Submit1" type="submit" value="submit" />
+</form>
+
+<br />
+<h2 style="color:red; background-color:burlywood; padding:10px;">
+    @ViewBag.Messages
+</h2>

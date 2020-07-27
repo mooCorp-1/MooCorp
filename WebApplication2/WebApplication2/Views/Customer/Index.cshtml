@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Customer Profile";
+}
+
+<h2>Customer Details</h2>
+
+<form asp-controller="Customer" asp-action="ViewDetails" method="post">
+    <input id="Submit1" type="submit" value="Get Customer Details" />
+</form>
+
+<strong>Name : </strong> @ViewBag.Name <br />
+<strong>Age : </strong> @ViewBag.Age <br />
